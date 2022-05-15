@@ -96,6 +96,9 @@
               "dynamicTriggerPathList": [],
               "dynamicBindingPathList": [
                 {
+                  "key": "tableData"
+                },
+                {
                   "key": "primaryColumns.ID.computedValue"
                 },
                 {
@@ -1135,7 +1138,7 @@
               "textSize": "PARAGRAPH",
               "widgetId": "0ayexe72mj",
               "isVisibleFilters": true,
-              "tableData": "",
+              "tableData": "{{Api1.data.result}}",
               "isVisible": true,
               "label": "Data",
               "searchKey": "",
@@ -1161,7 +1164,18 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_Api1",
+              "name": "Api1",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "widgetNames": [
           "MainContainer",
           "Table1"
